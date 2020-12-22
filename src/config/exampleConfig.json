@@ -1,0 +1,33 @@
+{
+    "host": "localhost:3000/",
+    "resolveLongForm": {
+        "method": "GET",
+        "path": "identifiers/",
+        "headers": {},
+        "did": "did:method:someLongFormId"
+    },
+    "resolveShortForm": {
+        "method": "GET",
+        "path": "identifiers/",
+        "headers": {},
+        "did": "did:method:someId"
+    },
+    "create": {
+        "method": "POST",
+        "path": "operations/",
+        "body": {},
+        "headers": {}
+    },
+    "updatePath": {
+        "method": "POST",
+        "path": "operations/",
+        "body": {},
+        "headers": {}
+    },
+    "recoverPath": {
+        "method": "POST",
+        "path": "operations/",
+        "body": {},
+        "headers": {}
+    }
+}
