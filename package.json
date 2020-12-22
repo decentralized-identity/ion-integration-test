@@ -1,0 +1,24 @@
+{
+  "name": "sidetree-integration-test",
+  "version": "0.0.1",
+  "description": "Integration test script for testing sidetree microservices",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && node dist/index.js",
+    "build": "tsc && copyfiles *.json dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decentralized-identity/sidetree-integration-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decentralized-identity/sidetree-integration-test/issues"
+  },
+  "homepage": "https://github.com/decentralized-identity/sidetree-integration-test#readme",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "typescript": "^4.1.3"
+  }
+}
