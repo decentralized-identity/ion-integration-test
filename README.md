@@ -1,2 +1,2 @@
-# sidetree-integration-test (WIP)
-An integration test script which helps verify that the sidetree microservices are working properly.
+# ion-integration-test (WIP)
+An integration test script which helps verify that the ion microservices are working properly.
