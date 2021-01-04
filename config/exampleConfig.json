@@ -1,5 +1,6 @@
 {
     "host": "http://localhost:3000/",
+    "validatePath": "identifiers/",
     "tests": [
         {
             "name": "resolve long form",
@@ -17,11 +18,12 @@
         },
         {
             "name": "create operation",
+            "helperFunction": "generateCreateRequest",
+            "timeOutInMinutes": 30, 
             "path": "operations/",
             "request": {
                 "method": "POST",
-                "body": {},
-                "headers": {}
+                "body": ""
             }
         },
         {
@@ -29,8 +31,7 @@
             "path": "operations/",
             "request": {
                 "method": "POST",
-                "body": {},
-                "headers": {}
+                "body": ""
             }
         },
         {
@@ -38,8 +39,7 @@
             "path": "operations/",
             "request": {
                 "method": "POST",
-                "body": {},
-                "headers": {}
+                "body": ""
             }
         }
     ]
