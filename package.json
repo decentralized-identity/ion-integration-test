@@ -4,7 +4,7 @@
   "description": "Integration test script for testing sidetree microservices",
   "main": "index.js",
   "scripts": {
-    "test": "npm run build && node dist/src/index.js",
+    "test": "npm run build && node dist/src/TestRunner.js",
     "build": "tsc && copyfiles \"config/**/*.json\" dist"
   },
   "repository": {

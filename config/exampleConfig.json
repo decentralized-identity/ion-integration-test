@@ -19,7 +19,7 @@
         {
             "name": "create operation",
             "helperFunction": "generateCreateRequest",
-            "timeOutInMinutes": 30, 
+            "timeOutInMinutes": 40, 
             "path": "operations/",
             "request": {
                 "method": "POST",
@@ -28,6 +28,7 @@
         },
         {
             "name": "update operation",
+            "timeOutInMinutes": 40, 
             "path": "operations/",
             "request": {
                 "method": "POST",
@@ -36,6 +37,7 @@
         },
         {
             "name": "recover operation",
+            "timeOutInMinutes": 40, 
             "path": "operations/",
             "request": {
                 "method": "POST",
