@@ -4,10 +4,13 @@ import IEventEmitter from './interfaces/IEventEmitter';
 import nodeFetch from 'node-fetch';
 import EventEmitter from './EventEmitter';
 
-const config = require('../config/exampleConfig.json');
+let config = require('../config/exampleConfig.json');
 
 export default class TestRunner {
-    public static async start(eventEmitter: IEventEmitter) {
+    public static async start(eventEmitter: IEventEmitter, customConfig?: any) {
+        if (customConfig !== undefined) {
+            config = customConfig;
+        }
         const successfulTests: string[] = [];
         const failedTests: string[] = [];
         for (const test of config.tests) {
