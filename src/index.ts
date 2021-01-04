@@ -1,6 +1,19 @@
-// Import the config which contains what tests to run
-// Execute them with desired retry interval and timeout (expected blochchain anchor time and after how long should the test be a failure)
+import nodeFetch from 'node-fetch';
 
-// Current design only tests the happy paths
+const config = require('../config/exampleConfig.json');
 
-console.log('Hello world');
+
+async function testLoop() {
+    for (const test of config.tests) {
+        console.log(`TESTING: ${test.name}`);
+        const uri = `${config.host}${test.path}`;
+        const response = await nodeFetch(uri, test.request);
+        if (response.status === 200) {
+            console.log('SUCCESS');
+        } else {
+            console.log('FAILURE');
+        }
+    }
+}
+
+testLoop();
