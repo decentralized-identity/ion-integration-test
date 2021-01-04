@@ -38,6 +38,7 @@ export default class TestRunner {
                         const validateResponse = await nodeFetch(`${config.host}${config.validatePath}${did}`);
                         if (validateResponse.status === 200) {
                             console.log('SUCCESS');
+                            successfulTests.push(test.name);
                             success = true;
                             break;
                         }
