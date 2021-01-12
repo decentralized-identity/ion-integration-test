@@ -1,6 +1,6 @@
 {
-  "name": "sidetree-integration-test",
-  "version": "0.0.1",
+  "name": "ion-integration-test",
+  "version": "0.0.2",
   "description": "Integration test script for testing sidetree microservices",
   "main": "index.js",
   "scripts": {
