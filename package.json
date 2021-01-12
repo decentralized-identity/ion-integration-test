@@ -1,11 +1,11 @@
 {
   "name": "ion-integration-test",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Integration test script for testing sidetree microservices",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "scripts": {
-    "test": "npm run build && node dist/src/TestRunner.js",
+    "test": "npm run build && node dist/src/Run.js",
     "build": "tsc && copyfiles \"config/**/*.json\" dist"
   },
   "repository": {

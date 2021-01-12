@@ -2,7 +2,6 @@ import { IonDocumentModel, IonKey, IonNetwork, IonRequest, IonSdkConfig, IonPubl
 import HelperFunction from './enums/HelperFunction';
 import IEventEmitter from './interfaces/IEventEmitter';
 import nodeFetch from 'node-fetch';
-import EventEmitter from './EventEmitter';
 
 let config = require('../config/exampleConfig.json');
 
@@ -101,6 +100,3 @@ export default class TestRunner {
         return IonRequest.createCreateRequest(input);
     }
 }
-
-EventEmitter.initialize();
-TestRunner.start(EventEmitter);
