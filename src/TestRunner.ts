@@ -62,12 +62,12 @@ export default class TestRunner {
     
         if (successfulTests.length > 0) {
             console.log(`Successful Tests: ${JSON.stringify(successfulTests)}`);
-            eventEmitter.emit("integration_test_success", {'sucess': successfulTests});
+            await eventEmitter.emit("integration_test_success", {'sucess': successfulTests});
         }
         
         if (failedTests.length > 0) {
             console.log(`Failed Tests: ${JSON.stringify(failedTests)}`);
-            eventEmitter.emit("integration_test_failure", {'failure': failedTests});
+            await eventEmitter.emit("integration_test_failure", {'failure': failedTests});
         }
 
     }
