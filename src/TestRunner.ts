@@ -6,9 +6,9 @@ import nodeFetch from 'node-fetch';
 let config = require('../config/exampleConfig.json');
 
 export default class TestRunner {
-    public static async start(eventEmitter: IEventEmitter, customConfig?: any) {
-        if (customConfig !== undefined) {
-            config = customConfig;
+    public static async start(eventEmitter: IEventEmitter, baseUrl?: string) {
+        if (baseUrl !== undefined) {
+            config.host = baseUrl;
         }
         const successfulTests: string[] = [];
         const failedTests: string[] = [];
