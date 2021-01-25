@@ -11,7 +11,7 @@
         },
         {
             "name": "resolve_short_form_test",
-            "path": "identifiers/did:ion:test:EiDVfDopiU1szFZQzSQwrpTFy5t1uVLkjAvWppwoScCQYg",
+            "path": "identifiers/did:ion:test:EiDc_SvkV6sLTMDpcLaAyMF7V_Z9-zj73r6XOy9Gs6_4jw",
             "request": {
                 "method": "GET"
             }
