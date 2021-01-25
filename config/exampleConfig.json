@@ -3,40 +3,22 @@
     "validatePath": "identifiers/",
     "tests": [
         {
-            "name": "resolve long form",
+            "name": "resolve_long_form_test",
             "path": "identifiers/did:ion:test:EiCmR-pCVgpdbvlslLryxxbk5KS44BZQqrkRgD-cVpD2vA:eyJkZWx0YSI6eyJwYXRjaGVzIjpbeyJhY3Rpb24iOiJyZXBsYWNlIiwiZG9jdW1lbnQiOnt9fV0sInVwZGF0ZUNvbW1pdG1lbnQiOiJFaUJXTlZndlRrRGJSeGtrLVZNN00yTm9QTU5nQW5TUmthSVB4czBxbWkwMTlnIn0sInN1ZmZpeERhdGEiOnsiZGVsdGFIYXNoIjoiRWlBQWpuQmZwQmFKbWxkUGh1SmZsMm03UFYwZ2hNckNDRF9DUEIzckxkYnBkQSIsInJlY292ZXJ5Q29tbWl0bWVudCI6IkVpQnVkSFQtUDg2UWtIN0pHVnljVHJJYWNyME5kWEwxMlVFQWZaNTJUWEstRGcifX0",
             "request": {
                 "method": "GET"
             }
         },
         {
-            "name": "resolve short form",
+            "name": "resolve_short_form_test",
             "path": "identifiers/did:ion:test:EiDVfDopiU1szFZQzSQwrpTFy5t1uVLkjAvWppwoScCQYg",
             "request": {
                 "method": "GET"
             }
         },
         {
-            "name": "create operation",
+            "name": "create_operation_test",
             "helperFunction": "generateCreateRequest",
-            "timeOutInMinutes": 40, 
-            "path": "operations/",
-            "request": {
-                "method": "POST",
-                "body": ""
-            }
-        },
-        {
-            "name": "update operation",
-            "timeOutInMinutes": 40, 
-            "path": "operations/",
-            "request": {
-                "method": "POST",
-                "body": ""
-            }
-        },
-        {
-            "name": "recover operation",
             "timeOutInMinutes": 40, 
             "path": "operations/",
             "request": {

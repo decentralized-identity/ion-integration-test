@@ -62,12 +62,16 @@ export default class TestRunner {
     
         if (successfulTests.length > 0) {
             console.log(`Successful Tests: ${JSON.stringify(successfulTests)}`);
-            await eventEmitter.emit("integration_test_success", {'sucess': successfulTests});
+            for (let testName of successfulTests) {
+                await eventEmitter.emit(testName, {'status': 'success'});
+            }
         }
         
         if (failedTests.length > 0) {
             console.log(`Failed Tests: ${JSON.stringify(failedTests)}`);
-            await eventEmitter.emit("integration_test_failure", {'failure': failedTests});
+            for (let testName of failedTests) {
+                await eventEmitter.emit(testName, {'status': 'failure'});
+            }
         }
 
     }
