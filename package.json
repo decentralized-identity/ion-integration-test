@@ -1,6 +1,6 @@
 {
   "name": "ion-integration-test",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Integration test script for testing sidetree microservices",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",

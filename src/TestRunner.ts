@@ -3,10 +3,14 @@ import HelperFunction from './enums/HelperFunction';
 import IEventEmitter from './interfaces/IEventEmitter';
 import nodeFetch from 'node-fetch';
 
-let config = require('../config/exampleConfig.json');
-
 export default class TestRunner {
-    public static async start(eventEmitter: IEventEmitter, baseUrl?: string) {
+    public static async start(eventEmitter: IEventEmitter, baseUrl?: string, isMainnet?: boolean) {
+        let config;
+        if (isMainnet) {
+            config = require('../config/mainnetConfig.json');
+        } else {
+            config = require('../config/testnetConfig.json');
+        }
         if (baseUrl !== undefined) {
             config.host = baseUrl;
         }
