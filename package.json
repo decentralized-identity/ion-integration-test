@@ -1,5 +1,5 @@
 {
-  "name": "ion-integration-test",
+  "name": "@decentralized-identity/ion-integration-test",
   "version": "0.0.12",
   "description": "Integration test script for testing sidetree microservices",
   "main": "dist/src/index.js",
