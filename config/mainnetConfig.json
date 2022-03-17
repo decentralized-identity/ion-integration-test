@@ -5,7 +5,7 @@
         {
             "name": "create_operation_test",
             "helperFunction": "generateCreateRequest",
-            "timeOutInMinutes": 40, 
+            "timeOutInMinutes": 120, 
             "path": "operations/",
             "request": {
                 "method": "POST",
